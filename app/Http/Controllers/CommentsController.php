@@ -8,6 +8,11 @@ use App\Comment;
 class CommentsController extends Controller
 {
     public function store(Post $post){
+        request()->validate([
+            'commentBody' => 'required',
+        ]);
+
+
         Comment::create([
                 'body'=>request()->commentBody,
                 'post_id'=> $post->id

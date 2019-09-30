@@ -7,9 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
 
-    protected $fillable = [
-        'body',
-    ];
+    protected $guarded=['_token'];
 
     public function posts(){
 
