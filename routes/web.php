@@ -26,7 +26,7 @@ Route::get('/logout','SessionsController@destroy')->name('logout');
 Route::get('/denied','PagesController@denied')->name('denied');
 Route::get('/about','PagesController@about')->name('about');
 Route::delete('/destroy/{post}','PagesController@destroy')->name('destroy');
-Route::delete('/posts/{post}/destroy','CommentsController@destroy')->name('comment.destroy');
+Route::delete('/posts/{comment}/destroy','CommentsController@destroy')->name('comment.destroy');
 
 
 Route::group(['middleware'=>'roles','roles'=>['user','editor','admin']], function (){

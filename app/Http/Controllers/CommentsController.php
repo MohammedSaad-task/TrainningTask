@@ -14,9 +14,10 @@ class CommentsController extends Controller
             ]);
         return back();
     }
-    public function destroy(Post $post){
-        // $post=Post::find($id);
-        $post->comment()->delete();
+    public function destroy(Comment $comment){
+
+        // $comment_id=Comment::find($id);
+        Comment::where('id',$comment->id)->first()->delete();
         return back();
     }
 

@@ -32,7 +32,7 @@
         <p>{{$comment->body}}</p>
         <p><span class="glyphicon glyphicon-time"></span> Commented on : {{$comment->created_at->toDayDateTimeString()}} </p>
 
-        <form action="{{route('comment.destroy',$post)}}" method="post">
+        <form action="{{route('comment.destroy',$comment)}}" method="post">
                 @method('DELETE')
                 <button class="btn btn-primary" type="submit" >Delete</button>
                 @csrf

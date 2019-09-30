@@ -118,26 +118,26 @@ div{
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-                                <li><a href="#">Category Name</a>
+                                <li><a href="{{route('category','computer')}}">Computer</a>
                                 </li>
-                                <li><a href="#">Category Name</a>
+                                <li><a href="{{route('category','web')}}">Web</a>
                                 </li>
-                                <li><a href="#">Category Name</a>
+                                <li><a href="#"></a>
                                 </li>
-                                <li><a href="#">Category Name</a>
+                                <li><a href="#"></a>
                                 </li>
                             </ul>
                         </div>
                         <!-- /.col-lg-6 -->
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-                                <li><a href="#">Category Name</a>
+                                <li><a href="{{route('category','programing')}}">Programing</a>
                                 </li>
-                                <li><a href="#">Category Name</a>
+                                <li><a href="{{route('category','sales')}}">Sales</a>
                                 </li>
-                                <li><a href="#">Category Name</a>
+                                <li><a href="#"></a>
                                 </li>
-                                <li><a href="#">Category Name</a>
+                                <li><a href="#"></a>
                                 </li>
                             </ul>
                         </div>
